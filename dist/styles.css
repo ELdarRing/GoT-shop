@@ -63,3 +63,19 @@
 .tea-art .art-top span{animation:none}
 @keyframes tea-marquee-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 @media(prefers-reduced-motion:reduce){.art-top-track{width:100%}.art-top-group{flex-basis:100%}.art-top-group[aria-hidden=true]{display:none}}
+
+/* Shared outline icons inherit the active theme. */
+.icon-definitions{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+.icon{display:inline-block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle;flex-shrink:0}
+.header nav a{display:inline-flex;align-items:center;gap:7px}
+.header nav .icon{width:15px;height:15px}
+.theme-icon{display:inline-flex;align-items:center}
+.theme-icon .icon{width:19px;height:19px}
+.offer-symbol .icon{width:46px;height:46px;stroke-width:1.25}
+.button>span,.offer>a>span,.about-note a>span{display:inline-flex;align-items:center}
+.reason-marker{display:flex;align-items:center;gap:10px}
+.reason-marker .icon{width:22px;height:22px;color:var(--text)}
+.location>span{display:inline-flex;align-items:flex-start;padding-top:2px}
+.location .icon{width:25px;height:25px}
+.muted a .icon{width:16px;height:16px;margin-left:4px}
+@media(max-width:700px){.header nav a{gap:4px}.header nav .icon{width:13px;height:13px}}
